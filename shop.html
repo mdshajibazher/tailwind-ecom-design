@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- header start -->
+    <header class="py-4 shadow-sm-bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- Logo -->
+        <a href="">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <!-- Searchbar -->
+        <div class="w-full max-w-xl relative flex">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="search">
+          <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+        </div>
+        <!-- Icons -->
+
+        <div class="flex items-center space-x-4">
+          <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+              <div class="text-2xl">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="text-xs leading-3">Wish List</div>
+              <span class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+          </a>
+          <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+            <div class="text-2xl">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span class="absolute -right-3 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+
+        </a>
+        <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+          <div class="text-2xl">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="text-xs leading-3">Lorem</div>
+      </a>
+        </div>
+      </div>
+    </header>
+  <!-- header end -->
+
+  <!-- Navbar start -->
+  <nav class="bg-gray-800">
+    <div class="container flex">
+      <!-- All category start -->
+          <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+              <span class="text-white">
+                <i class="fa fa-bars"></i>
+              </span>
+              <span class="capitalize ml-2 text-white">Categories </span>
+
+              <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition invisible group-hover:visible">
+                <a class="flex items-center px-6 py-3 hover:bg-gray-100 transition" href="#">
+                  <img class="w-5 h-5 object-contain" src="images/icons/sofa.svg" alt="">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                </a>
+
+                <a class="flex items-center px-6 py-3 hover:bg-gray-100 transition" href="#">
+                  <img class="w-5 h-5 object-contain" src="images/icons/sofa.svg" alt="">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                </a>
+
+                <a class="flex items-center px-6 py-3 hover:bg-gray-100 transition" href="#">
+                  <img class="w-5 h-5 object-contain" src="images/icons/sofa.svg" alt="">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                </a>
+
+                <a class="flex items-center px-6 py-3 hover:bg-gray-100 transition" href="#">
+                  <img class="w-5 h-5 object-contain" src="images/icons/sofa.svg" alt="">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                </a>
+
+                <a class="flex items-center px-6 py-3 hover:bg-gray-100 transition" href="#">
+                  <img class="w-5 h-5 object-contain" src="images/icons/sofa.svg" alt="">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                </a>
+              </div>
+          </div>
+      <!-- All category end-->
+      <!-- Navbar links start-->
+      <div class="flex items-center justify-between flex-grow pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="#" class="text-gray-200 hover:text-white transition">Home</a>  
+            <a href="#" class="text-gray-200 hover:text-white transition">Shop</a>  
+            <a href="#" class="text-gray-200 hover:text-white transition">About Us</a>  
+            <a href="#" class="text-gray-200 hover:text-white transition">Contact</a>  
+          </div>
+          <a href="#" class="text-gray-200 hover:text-white transition">Login/Register</a>  
+      </div>
+      <!-- Navbar links end-->
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Breadcrumb -->
+  <div class="container py-4 flex items-center gap-3">
+    <a class="text-primary text-base" href="#">
+      <i class="fas fa-home"></i>
+    </a>
+    <span class="text-sm text-gray-400">
+      <i class="fas fa-chevron-right"></i>
+    </span>
+    <p class="text-gray-600 font-medium">Shop</p>
+  </div>
+  <!-- Breadcrumb End-->
+
+  <!-- Shop wrapper -->
+  <div class="container grid grid-col-4 gap-6 pt-4 pb-16">
+    <!-- Sidebar -->
+    <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+      <div class="divide-y divide-red-200  space-y-5">
+        <!-- category filter -->
+        <div>
+          <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Categories</h3>
+          <div class="space-y-2">
+            <!-- single category -->
+            <div class="flex items-center">
+              <input type="checkbox" id="cat-1">
+              <label for="cat-1"></label>
+            </div>
+            <!-- end single category -->
+          </div>
+        </div>
+        <!-- end category filter -->
+      </div>
+    </div>
+    <!-- Sidebar end -->
+  </div>
+  <!-- Shop wrapper end -->
+
+
+
+</body>
+</html>
